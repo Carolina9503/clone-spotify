@@ -1,0 +1,59 @@
+.home__screen {
+  background-color: #121212;
+  color: #fff;
+  height: 100vh;
+  width: 100vw;
+  padding: 30px;
+  overflow-y: overlay;
+}
+.home__screen::-webkit-scrollbar {
+  display: none;
+}
+.home__screen__info {
+  align-items: flex-end;
+  padding: 10px;
+}
+.home__screen__img {
+  width: 20vw;
+  margin: 0 20px;
+  box-shadow: 0 4px 60px #fff;
+  margin-bottom: 20px;
+}
+.home__screen__infoText {
+  flex: 1;
+}
+.home__screen__infoText h1 {
+  margin-bottom: 10px;
+}
+.play__icon {
+  font-size: 2rem !important;
+  transition: transform 200ms ease-in-out !important;
+}
+.play__icon:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .home__cards {
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .home__screen {
+    height: 90.5vh;
+  }
+  .home__screen__img {
+    width: 30vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .home__screen {
+    flex: 0.8;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .home__screen {
+    height: 92vh;
+  }
+}

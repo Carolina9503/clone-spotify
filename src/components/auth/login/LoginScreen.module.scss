@@ -1,0 +1,31 @@
+@import "../../../styles/vars.scss";
+.container {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: $primary-dark;
+}
+.logo {
+  width: 100%;
+}
+.container_a {
+  padding: 20px;
+  background-color: $green;
+  border-radius: 90px;
+  color: $white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+@media screen and (min-width: 768px) {
+  .container_a {
+    padding: 22px 35px;
+    margin-bottom: 10rem;
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .logo {
+    width: 80%;
+  }
+}

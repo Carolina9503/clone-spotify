@@ -1,0 +1,88 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  height: 80px;
+  width: 100vw;
+  background-color: #181818;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px;
+}
+.footer__left {
+  display: none;
+}
+
+.footer__center {
+  flex: 0.4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 300px;
+}
+.footer__right {
+  flex: 0.4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 35px;
+  gap: 10px;
+}
+.MuiSlider_root {
+  color: #00ff00 !important;
+  margin-bottom: 10px;
+}
+.shuffle,
+.repeat {
+  color: #00ff00;
+  transition: transform 200ms ease-in-out !important;
+}
+.shuffle:hover,
+.repeat:hover,
+.icon:hover {
+  transform: scale(1.2);
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    margin: 0;
+  }
+  .footer__left {
+    display: inside;
+    flex: 0.2;
+    display: flex;
+    align-items: center;
+    min-width: 200px;
+  }
+  .footer__center {
+    flex: 0.2;
+  }
+  .footer__right {
+    flex: 0.5;
+    gap: 1rem;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .footer__left {
+    flex: 0.3;
+  }
+  .footer__center {
+    flex: 0.4;
+  }
+  .footer__right {
+    flex: 0.3;
+  }
+  .shuffle,
+  .repeat,
+  .icon {
+    font-size: 2.5em !important;
+  }
+  .footer__left h4 {
+    font-size: 20px;
+  }
+  .footer__left p {
+    font-size: 17px;
+  }
+  .footer__left img {
+    margin-right: 10px;
+  }
+}

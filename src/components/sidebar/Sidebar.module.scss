@@ -1,0 +1,43 @@
+.sidebar {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .sidebar {
+    display: block;
+    flex: 0.2;
+    height: 100vh;
+    background-color: #000000;
+    min-width: 240px;
+    color: #9f9f9f;
+    font-size: 1.6rem;
+  }
+  .sidebar img {
+    height: 70px;
+    padding: 10px;
+    margin-right: auto;
+  }
+  .sidebar hr {
+    border: 1px solid smokegray;
+    width: 90%;
+    margin: 10px auto;
+  }
+  .sidebar_playlist {
+    margin: 5px 10px;
+  }
+  .sidebar_items {
+    display: flex;
+    align-items: center;
+    color: grey;
+    height: 40px;
+    cursor: pointer;
+    transition: 300ms color ease-in;
+    margin-left: 10px;
+    gap: 10px;
+  }
+  .sidebar_items :hover {
+    color: #ffffff;
+  }
+  .icon {
+    font-size: 2.5rem !important;
+  }
+}

@@ -1,0 +1,49 @@
+@import "../../Styles/vars.scss";
+.container {
+  display: flex;
+  // margin-left: 25px;
+  align-items: center;
+  z-index: 90;
+}
+.container:hover {
+  cursor: pointer;
+  background-color: #000000;
+  opacity: 0.8;
+  color: #fff;
+}
+.btn_yellow {
+  background-color: yellow;
+}
+.btn_white {
+  background-color: white;
+}
+.container__img {
+  height: 50px;
+  width: 50px;
+  object-fit: contain;
+}
+.container__info {
+  margin-left: 20px;
+}
+.container__info p {
+  margin-top: 3px;
+  color: lightgray;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 205px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #141414;
+  }
+  .container:hover {
+    background-color: #161313;
+  }
+  .container:focus {
+    background-color: #161313;
+  }
+  .container__img {
+    width: 200px;
+    height: 230px;
+  }
+}
