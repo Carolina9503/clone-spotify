@@ -1,10 +1,13 @@
 import React from "react";
-import Footer from "../footer/Footer";
+import { useSelector } from "react-redux";
+import { selectToggle } from "../../../reducers/features/toggle/toggleSlice";
+import Footer from "../../atomos/footer/Footer";
 import Home from "../home/Home";
-import Sidebar from "../sidebar/Sidebar";
+import Sidebar from "../../moleculas/sidebar/Sidebar";
 import styles from "./SpotifyScreen.module.scss";
 
 const SpotifyScreen = () => {
+  const toggleMenu = useSelector(selectToggle);
   return (
     <>
       <div className={styles.spotify__body}>

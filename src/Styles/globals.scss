@@ -21,3 +21,24 @@ a {
 * {
   box-sizing: border-box;
 }
+ul {
+  margin: 0;
+  padding: 0;
+}
+li,
+ul {
+  list-style: none;
+}
+button {
+  background: none;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+  -webkit-user-select: none; /* for button */
+  -webkit-appearance: button; /* for input */
+  -moz-user-select: none;
+  -ms-user-select: none;
+}

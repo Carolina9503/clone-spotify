@@ -7,7 +7,7 @@ import { SET_USER, selectUser } from "./reducers/features/user/userSlice";
 import { SET_TOKEN } from "./reducers/features/token/tokenSlice";
 
 import { SET_PLAYLIST } from "./reducers/features/playList/playListSlice";
-import { getTokenFromUrl } from "./components/auth/login/logicLogin";
+import { getTokenFromUrl } from "./components/atomos/auth/login/logicLogin";
 
 const spotify = new SpotifyWebApi();
 
@@ -20,6 +20,7 @@ function App() {
     const _token = hash.access_token;
 
     if (_token) {
+      console.log("LLego aqui");
       dispatch(SET_TOKEN(_token));
       spotify.setAccessToken(_token);
       spotify.getMe().then((user) => dispatch(SET_USER(user)));
@@ -36,7 +37,9 @@ function App() {
       // .getPlaylist("2FqbB4n32EAp8xWiEPSslS")
       // .then((playlist) => console.log("Playlist en app", playlist));
     }
+    // window.location.hash = "";
   }, [dispatch]);
+
   return (
     <div className="App">
       <AppRouter />

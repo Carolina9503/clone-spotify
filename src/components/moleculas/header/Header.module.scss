@@ -1,0 +1,87 @@
+@import "../../../Styles/vars.scss";
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  gap: 10px;
+  height: 4rem;
+}
+.btn_menu {
+  border: 0;
+  background: none;
+}
+.dehazeIcon {
+  font-size: 2.5rem !important;
+  margin-top: 7px;
+  color: $white;
+}
+.header__left {
+  display: flex;
+  min-width: 75px;
+  padding: 10px;
+  align-items: center;
+  background-color: $white_light;
+  border: none;
+  font-size: 14px;
+  color: $grey;
+  border-radius: 35px;
+}
+.searchIcon {
+  width: 1.5em !important;
+  height: 1.5em !important;
+}
+.header__left__input {
+  border: none;
+  width: 100%;
+}
+.header__right {
+  display: flex;
+  align-items: center;
+}
+.header__right h4 {
+  padding: 15px;
+}
+.header__right__img {
+  width: 20%;
+  height: 20%;
+  border-radius: 50%;
+  object-fit: contain;
+}
+.header_logout {
+  z-index: 9999;
+  position: absolute;
+  inset: 0px 0px auto auto;
+  margin: 0px;
+  transform: translate3d(-16px, 56px, 0px);
+  display: flex;
+  width: 150px;
+  height: 100px;
+  background-color: #282828;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.header_logout ul li {
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+.header_logout ul li:hover {
+  background: #3f3c3c;
+  padding: 4px 4px;
+}
+// #3f3c3c
+.header_logout_close {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .header__left {
+    width: 90%;
+    margin-right: 100px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .dehazeIcon {
+    display: none !important;
+  }
+}

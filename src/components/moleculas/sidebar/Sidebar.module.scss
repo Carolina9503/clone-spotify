@@ -1,0 +1,56 @@
+@import "../../../Styles/vars.scss";
+.openSidebar {
+  display: block;
+  position: absolute;
+  margin-top: 80px;
+}
+.closeSidebar {
+  display: none;
+}
+
+.sidebar {
+  flex: 0.2;
+  height: 100vh;
+  background-color: $primary-dark;
+  min-width: 240px;
+  color: $grey_light;
+  font-size: 1.6rem;
+}
+.sidebar img {
+  height: 70px;
+  padding: 10px;
+  margin-right: auto;
+}
+.sidebar hr {
+  border: 1px solid smokegray;
+  width: 90%;
+  margin: 10px auto;
+}
+.sidebar_playlist {
+  margin: 5px 10px;
+}
+.sidebar_items {
+  display: flex;
+  align-items: center;
+  color: $grey;
+  height: 40px;
+  cursor: pointer;
+  transition: 300ms color ease-in;
+  margin-left: 10px;
+  gap: 10px;
+}
+.sidebar_items :hover {
+  color: $white;
+}
+.icon {
+  font-size: 2.5rem !important;
+}
+
+@media screen and (min-width: 1024px) {
+  .openSidebar {
+    display: block;
+  }
+  .closeSidebar {
+    display: block;
+  }
+}

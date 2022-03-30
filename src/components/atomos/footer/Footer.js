@@ -30,7 +30,7 @@ const Footer = () => {
         <RepeatIcon className={styles.repeat} />
       </div>
       <div className={styles.footer__right}>
-        <Grid container spacing={2}>
+        <Grid container spacing={3} className={styles.grid_footer}>
           <Grid item>
             <PlaylistPlayIcon className={styles.icon} />
           </Grid>

@@ -1,9 +1,20 @@
-@import "../../Styles/vars.scss";
+@import "../../../Styles/vars.scss";
 .container {
   display: flex;
   // margin-left: 25px;
   align-items: center;
   z-index: 90;
+}
+.btn__start {
+  background: none;
+  border: 0;
+}
+.container__info h4,
+p {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .container:hover {
   cursor: pointer;
@@ -12,14 +23,14 @@
   color: #fff;
 }
 .btn_yellow {
-  background-color: yellow;
+  color: yellow;
 }
 .btn_white {
-  background-color: white;
+  color: white;
 }
 .container__img {
-  height: 50px;
-  width: 50px;
+  height: 80px;
+  width: 80px;
   object-fit: contain;
 }
 .container__info {

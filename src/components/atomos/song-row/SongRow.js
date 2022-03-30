@@ -2,7 +2,8 @@ import React from "react";
 import styles from "./SongRow.module.scss";
 import StarBorderIcon from "@material-ui/icons/StarBorder";
 import { useDispatch } from "react-redux";
-import { isFavorite } from "../../helpers/isFavorite";
+import { isFavorite } from "../../../helpers/isFavorite";
+// import toast, { Toaster } from "react-hot-toast";
 
 const SongRow = ({ track, favorite }) => {
   const dispatch = useDispatch();
@@ -18,10 +19,12 @@ const SongRow = ({ track, favorite }) => {
         <p>{track.artists.map((artist) => artist.name).join(",")}</p>
 
         <button
-          className={favorite ? styles.btn_yellow : styles.btn_white}
+          className={styles.btn__start}
           onClick={() => dispatch(isFavorite(track, favorite))}
         >
-          <StarBorderIcon />
+          <StarBorderIcon
+            className={favorite ? styles.btn_yellow : styles.btn_white}
+          />
         </button>
       </div>
     </div>

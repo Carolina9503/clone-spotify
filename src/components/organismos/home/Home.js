@@ -1,17 +1,21 @@
 import React from "react";
 import styles from "./Home.module.scss";
-import Header from "../header/Header.js";
+import Header from "../../moleculas/header/Header.js";
 import { useSelector } from "react-redux";
-import { selectPlaylist } from "../../reducers/features/playList/playListSlice";
+import { selectPlaylist } from "../../../reducers/features/playList/playListSlice";
 import PlayCircleFilledIcon from "@material-ui/icons/PlayCircleFilled";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
-import SongRow from "../song-row/SongRow";
+import SongRow from "../../atomos/song-row/SongRow";
 import { useHistory } from "react-router-dom";
+import { selectFavorite } from "../../../reducers/features/favorite/favoriteSlice";
+import toast, { Toaster } from "react-hot-toast";
 
 const HomeScreen = () => {
   const playlist = useSelector(selectPlaylist);
+  const favorite = useSelector(selectFavorite);
   const history = useHistory();
+
   return (
     <div className={styles.home__screen}>
       <Header />
@@ -25,7 +29,7 @@ const HomeScreen = () => {
           <h4>PLAYLISTS</h4>
           <button
             onClick={() => {
-              history.push("/favorites");
+              favorite.length > 0 && history.push("/favorites");
             }}
           >
             MI LISTA DE FAVORITOS

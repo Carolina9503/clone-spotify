@@ -1,6 +1,7 @@
+@import "../../../Styles/vars.scss";
 .home__screen {
-  background-color: #121212;
-  color: #fff;
+  background-color: $primary;
+  color: $white;
   height: 100vh;
   width: 100vw;
   padding: 30px;
@@ -14,9 +15,8 @@
   padding: 10px;
 }
 .home__screen__img {
-  width: 20vw;
-  margin: 0 20px;
-  box-shadow: 0 4px 60px #fff;
+  width: 35vw;
+  box-shadow: 0 3px 20px $white;
   margin-bottom: 20px;
 }
 .home__screen__infoText {
