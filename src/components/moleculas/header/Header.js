@@ -7,6 +7,7 @@ import { useDispatch } from "react-redux";
 import DehazeIcon from "@material-ui/icons/Dehaze";
 import { TOGGLE_MENU } from "../../../reducers/features/toggle/toggleSlice";
 import { useHistory } from "react-router-dom";
+import { SET_USER } from "../../../reducers/features/user/userSlice";
 
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -51,7 +52,7 @@ const Header = () => {
         <ul>
           <li>Cuenta</li>
           <li>Perfil</li>
-          <li onClick={() => history.push("auth/login")}>Cerrar sesión</li>
+          <li onClick={() => dispatch(SET_USER(null))}>Cerrar sesión</li>
         </ul>
       </div>
     </div>

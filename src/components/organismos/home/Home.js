@@ -19,6 +19,7 @@ const HomeScreen = () => {
   return (
     <div className={styles.home__screen}>
       <Header />
+      <Toaster />
       <div className={styles.home__screen__info}>
         <img
           className={styles.home__screen__img}
@@ -29,6 +30,7 @@ const HomeScreen = () => {
           <h4>PLAYLISTS</h4>
           <button
             onClick={() => {
+              toast.success("Exitoso");
               favorite.length > 0 && history.push("/favorites");
             }}
           >
