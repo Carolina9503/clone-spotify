@@ -28,11 +28,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 35px;
-  gap: 10px;
+}
+.icon {
+  font-size: 2.2rem !important;
 }
 .MuiSlider_root {
   color: #00ff00 !important;
+  font-size: 2.2rem !important;
 }
 .shuffle,
 .repeat {
@@ -50,7 +52,7 @@
   }
   .footer__left {
     display: inside;
-    flex: 0.2;
+    flex: 0.3;
     display: flex;
     align-items: center;
     min-width: 200px;
@@ -59,8 +61,7 @@
     flex: 0.3;
   }
   .footer__right {
-    flex: 0.4;
-    gap: 1rem;
+    flex: 0.3;
   }
 }
 @media screen and (min-width: 1920px) {

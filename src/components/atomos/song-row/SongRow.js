@@ -23,7 +23,9 @@ const SongRow = ({ track, favorite }) => {
           onClick={() => dispatch(isFavorite(track, favorite))}
         >
           <StarBorderIcon
-            className={favorite ? styles.btn_yellow : styles.btn_white}
+            className={`${favorite ? styles.btn_yellow : styles.btn_white} ${
+              styles.start__border
+            }`}
           />
         </button>
       </div>

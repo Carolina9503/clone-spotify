@@ -8,6 +8,7 @@ import { useHistory } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { selectToggle } from "../../../reducers/features/toggle/toggleSlice";
 import { selectFavorite } from "../../../reducers/features/favorite/favoriteSlice";
+import toast from "react-hot-toast";
 
 const Sidebar = () => {
   const history = useHistory();
@@ -32,7 +33,9 @@ const Sidebar = () => {
       <div
         className={styles.sidebar_playlist}
         onClick={() => {
-          favorite.length > 0 && history.push("/favorites");
+          favorite.length > 0
+            ? history.push("/favorites")
+            : toast.success("No tienes lista de favoritos");
         }}
       >
         FAVORITE PLAYLISTS

@@ -30,8 +30,9 @@ const HomeScreen = () => {
           <h4>PLAYLISTS</h4>
           <button
             onClick={() => {
-              toast.success("Exitoso");
-              favorite.length > 0 && history.push("/favorites");
+              favorite.length > 0
+                ? history.push("/favorites")
+                : toast.success("No tienes lista de favoritos");
             }}
           >
             MI LISTA DE FAVORITOS

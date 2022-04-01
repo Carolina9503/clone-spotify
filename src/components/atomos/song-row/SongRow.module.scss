@@ -1,13 +1,11 @@
 @import "../../../Styles/vars.scss";
 .container {
   display: flex;
-  // margin-left: 25px;
   align-items: center;
   z-index: 90;
 }
 .btn__start {
-  background: none;
-  border: 0;
+  border-radius: 35px;
 }
 .container__info h4,
 p {
@@ -18,12 +16,15 @@ p {
 }
 .container:hover {
   cursor: pointer;
-  background-color: #000000;
+  background-color: $primary;
   opacity: 0.8;
   color: #fff;
 }
 .btn_yellow {
   color: yellow;
+}
+.start__border {
+  font-size: 2.8rem !important;
 }
 .btn_white {
   color: white;

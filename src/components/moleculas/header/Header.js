@@ -6,8 +6,8 @@ import { useDispatch } from "react-redux";
 
 import DehazeIcon from "@material-ui/icons/Dehaze";
 import { TOGGLE_MENU } from "../../../reducers/features/toggle/toggleSlice";
-import { useHistory } from "react-router-dom";
 import { SET_USER } from "../../../reducers/features/user/userSlice";
+import { setToken } from "../../../utils/storage";
 
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -18,7 +18,10 @@ const Header = () => {
     setOpenMenu((openMenu) => !openMenu);
     dispatch(TOGGLE_MENU(openMenu));
   };
-  const history = useHistory();
+  const handleCloseSections = () => {
+    dispatch(SET_USER(null));
+    setToken("");
+  };
 
   return (
     <div className={styles.header}>
@@ -38,7 +41,10 @@ const Header = () => {
         />
       </div>
       <div className={styles.header__right}>
-        <button onClick={() => setLogout((logout) => !logout)}>
+        <button
+          className={styles.btn_img_user}
+          onClick={() => setLogout((logout) => !logout)}
+        >
           <img
             src="https://i.scdn.co/image/ab6775700000ee85b78f4b42ea660a2e83b1873c"
             alt="caro9503"
@@ -52,7 +58,7 @@ const Header = () => {
         <ul>
           <li>Cuenta</li>
           <li>Perfil</li>
-          <li onClick={() => dispatch(SET_USER(null))}>Cerrar sesión</li>
+          <li onClick={handleCloseSections}>Cerrar sesión</li>
         </ul>
       </div>
     </div>
