@@ -1,12 +1,12 @@
 .footer {
   position: fixed;
   bottom: 0;
-  height: 80px;
+  height: 90px;
   width: 100vw;
   background-color: #181818;
   color: #fff;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .footer__left {
   display: none;
@@ -20,14 +20,14 @@
   flex: 0.4;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   max-width: 300px;
 }
 .footer__right {
   flex: 0.4;
   display: flex;
   align-items: center;
-  justify-content: center;
+  margin-right: 1.3rem;
 }
 .icon {
   font-size: 2.2rem !important;
@@ -40,12 +40,14 @@
 .repeat {
   color: #00ff00;
   transition: transform 200ms ease-in-out !important;
+  font-size: 2.2rem !important;
 }
 .shuffle:hover,
 .repeat:hover,
 .icon:hover {
   transform: scale(1.2);
 }
+
 @media screen and (min-width: 768px) {
   .footer {
     margin: 0;
@@ -58,10 +60,16 @@
     min-width: 200px;
   }
   .footer__center {
-    flex: 0.3;
+    flex: 0.4;
+    justify-content: center;
+    margin-right: 18rem;
+    gap: 30px;
   }
   .footer__right {
-    flex: 0.3;
+    flex: 0.2;
+  }
+  .MuiSlider_root {
+    width: 50% !important;
   }
 }
 @media screen and (min-width: 1920px) {
@@ -69,10 +77,10 @@
     flex: 0.3;
   }
   .footer__center {
-    flex: 0.4;
+    flex: 0.5;
   }
   .footer__right {
-    flex: 0.3;
+    flex: 0.2;
   }
   .shuffle,
   .repeat,

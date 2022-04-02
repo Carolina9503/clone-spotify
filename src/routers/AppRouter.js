@@ -12,6 +12,7 @@ import AuthPrivateRouter from "./AuthPrivateRouter";
 import AuthRouter from "./AuthRouter";
 import { PrivateRoute } from "./PrivateRouter";
 import { PublicRoute } from "./PublicRouter";
+import CircularProgress from "@mui/material/CircularProgress";
 const spotify = new SpotifyWebApi();
 
 const AppRouter = () => {
@@ -47,7 +48,7 @@ const AppRouter = () => {
     window.location.hash = "";
   }, [dispatch, tokenLocal]);
   if (loading) {
-    return <h1>Cargando...</h1>;
+    return <CircularProgress />;
   }
   return (
     <Router>

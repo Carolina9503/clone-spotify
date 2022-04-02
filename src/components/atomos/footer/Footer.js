@@ -37,7 +37,7 @@ const Footer = () => {
           <Grid item>
             <VolumeDownIcon className={styles.icon} />
           </Grid>
-          <Grid item xs>
+          <Grid item xs className={styles.slider}>
             <Slider className={styles.MuiSlider_root} />
           </Grid>
         </Grid>
