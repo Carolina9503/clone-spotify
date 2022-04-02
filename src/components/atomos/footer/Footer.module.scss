@@ -49,9 +49,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .footer {
-    margin: 0;
-  }
   .footer__left {
     display: inside;
     flex: 0.3;
@@ -66,10 +63,18 @@
     gap: 30px;
   }
   .footer__right {
-    flex: 0.2;
+    flex: 1.2 1;
   }
+  // .MuiSlider_root {
+  //   width: 50% !important;
+  // }
+}
+@media screen and (min-width: 1024px) {
   .MuiSlider_root {
     width: 50% !important;
+  }
+  .footer__right {
+    flex: 0.2;
   }
 }
 @media screen and (min-width: 1920px) {
