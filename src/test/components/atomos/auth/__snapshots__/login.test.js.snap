@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <LoginScreen/> debe de mostar el componente correctamente 1`] = `
+<div
+  className="container"
+>
+  <img
+    alt="Logo Spotify"
+    className="logo"
+    src="http://1000logos.net/wp-content/uploads/2017/08/Spotify-symbol.jpg"
+  />
+  <a
+    className="container_a"
+    href="https://accounts.spotify.com/authorize?client_id=6ce78825323c48188d029e27ff16c54d&response_type=token&redirect_uri=http://localhost:3000/&scope=user-read-currently-playing%20user-read-recently-played%20user-read-playback-state%20user-top-read%20user-modify-playback-state&show_dialog=true"
+  >
+    Login with spotify
+  </a>
+</div>
+`;
+
+exports[`Pruebas en <LoginScreen/> debe de mostarr el componente correctamente 1`] = `
+<div
+  className="container"
+>
+  <img
+    alt="Logo Spotify"
+    className="logo"
+    src="http://1000logos.net/wp-content/uploads/2017/08/Spotify-symbol.jpg"
+  />
+  <a
+    className="container_a"
+    href="https://accounts.spotify.com/authorize?client_id=6ce78825323c48188d029e27ff16c54d&response_type=token&redirect_uri=http://localhost:3000/&scope=user-read-currently-playing%20user-read-recently-played%20user-read-playback-state%20user-top-read%20user-modify-playback-state&show_dialog=true"
+  >
+    Login with spotify
+  </a>
+</div>
+`;

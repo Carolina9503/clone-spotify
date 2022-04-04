@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <Footer/> debe de mostarr el componente correctamente 1`] = `
+<div
+  className="footer"
+>
+  <div
+    className="footer__left"
+  >
+    <img
+      alt="covers"
+      src="https://i.scdn.co/image/ab67616d00004851e6f407c7f3a0ec98845e4431"
+    />
+    <div>
+      <h4>
+        Off My Face
+      </h4>
+      <p>
+        Justin Bieber
+      </p>
+    </div>
+  </div>
+  <div
+    className="footer__center"
+  >
+    <Memo(ForwardRef(ShuffleIcon))
+      className="shuffle"
+    />
+    <Memo(ForwardRef(SkipPreviousIcon))
+      className="icon"
+    />
+    <Memo(ForwardRef(PlayCircleOutlineIcon))
+      className="icon"
+    />
+    <Memo(ForwardRef(SkipNextIcon))
+      className="icon"
+    />
+    <Memo(ForwardRef(RepeatIcon))
+      className="repeat"
+    />
+  </div>
+  <div
+    className="footer__right"
+  >
+    <WithStyles(ForwardRef(Grid))
+      className="grid_footer"
+      container={true}
+      spacing={3}
+    >
+      <WithStyles(ForwardRef(Grid))
+        item={true}
+      >
+        <Memo(ForwardRef(PlaylistPlayIcon))
+          className="icon"
+        />
+      </WithStyles(ForwardRef(Grid))>
+      <WithStyles(ForwardRef(Grid))
+        item={true}
+      >
+        <Memo(ForwardRef(VolumeDownIcon))
+          className="icon"
+        />
+      </WithStyles(ForwardRef(Grid))>
+      <WithStyles(ForwardRef(Grid))
+        className="slider"
+        item={true}
+        xs={true}
+      >
+        <WithStyles(ForwardRef(Slider))
+          className="MuiSlider_root"
+        />
+      </WithStyles(ForwardRef(Grid))>
+    </WithStyles(ForwardRef(Grid))>
+    <div />
+  </div>
+</div>
+`;
